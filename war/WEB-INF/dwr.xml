@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 0.4//EN" "http://www.getahead.ltd.uk/dwr/dwr.dtd">
+
+<dwr>
+  <allow>
+  
+
+        <create creator="new" javascript="ListaDescarteDAO" >
+	  <param name="class" value="dwrDao.ListaDescarteDAO"/>    
+            <include method="mostrarLista"/>
+	    <include method="verprueba"/>
+	        
+	</create>    	
+  
+  
+        <create creator="new" javascript="NuevoDAO" >
+	  <param name="class" value="dwrDao.NuevoDAO"/>    
+	    <include method="countRegistro_datos"/>
+	    <include method="contCi"/>
+            <include method="adicionarPersona"/>
+            <include method="adicionarEF"/>
+	    <include method="countRegistro"/>
+	</create>    	
+
+
+
+        <create creator="new" javascript="ListaMedicaDAO" >
+        <param name="class" value="dwrDao.ListaMedicaDAO"/>    
+            <include method="mostrarLista"/>
+	    <include method="mostrarListaEva"/>
+	    <include method="adicionarEva"/>
+	    <include method="cont"/>
+	    <include method="cont1"/>
+	    <include method="cont2"/>
+	    <include method="cont3"/>
+	    <include method="cont4"/>
+	    <include method="cont6"/>
+	    <include method="cont7"/>
+	</create>    	
+
+
+        <create creator="new" javascript="ListarDAO" >
+	  <param name="class" value="dwrDao.ListarDAO"/>    
+	    <include method="mostrarResultados"/>
+	    <include method="mostrarResultadosPre"/>
+	</create>    	
+
+
+        <create creator="new" javascript="BusquedaDAO" >
+	  <param name="class" value="dwrDao.BusquedaDAO"/>    
+	    <include method="contCodigo"/>
+	    <include method="contCi"/>
+	    <include method="contAp"/>
+	    <include method="mostrarBusqueda_DonantesCodigo"/>
+	    <include method="mostrarBusqueda_DonantesCi"/>
+	    <include method="mostrarBusqueda_ResultadosCodigo"/>
+	    <include method="mostrarBusqueda_ResultadosCi"/>
+	    <include method="mostrarBusqueda_apellidos"/>
+	    <include method="agregar_donante_1"/>
+	    <include method="agregar_donante_2"/>	    
+	    <include method="agregar_donante_3"/>
+	    <include method="agregar_donante_4"/>
+	    <include method="countRegistro_datos"/>
+	    <include method="adicionarEF"/>
+
+	    <include method="mostrarBusqueda"/>
+            <include method="mostrarResultados"/>
+            <include method="mostrarResultadosPre"/>
+	    <include method="mostrarResultadosPredo"/>
+	    <include method="mostrarResultadosSere"/>
+	    <include method="mostrarResultadosHema"/>	    
+	    <include method="mostrarResultados_prueba0"/>	
+	    <include method="agregar_donante1"/>
+	    <include method="agregar_donante_11"/>	    
+	    <include method="agregar_donante_22"/>
+	    <include method="modificar_Datos_Donante"/>
+
+	</create>    	
+
+
+
+        <create creator="new" javascript="ListaPreDAO" >
+	  <param name="class" value="dwrDao.ListaPreDAO"/>    
+	    <include method="mostrarLista"/>	
+            <include method="mostrarLista1"/>	    
+	    <include method="mostrarLista2"/>	    
+	    <include method="cambioAtendido"/>	
+	    <include method="mostrarLista3"/>	
+	    <include method="mostrarLista4"/>
+	    <include method="mostrarNombre"/>
+	    <include method="adicionarR"/>	    
+	    <include method="ListaT"/>
+	    <include method="ListarNombre"/>	    
+	    <include method="FinalizarTodo"/>	    	    
+	</create>    	
+
+
+
+        <create creator="new" javascript="ListaExtraDAO" >
+	  <param name="class" value="dwrDao.ListaExtraDAO"/>    
+	    <include method="mostrarLista"/>
+	    <include method="cont"/>	
+	    <include method="codigo"/>	
+	    <include method="adicionarExtra"/>
+	</create>    	
+
+        <create creator="new" javascript="ListaFracDAO">
+	  <param name="class" value="dwrDao.ListaFracDAO"/>    
+	    <include method="mostrarLista"/>
+	    <include method="mostrar"/>	    
+	    <include method="mostrarCombo"/>
+	    <include method="adicionarR"/>
+	    <include method="ListaT"/>
+	    <include method="FinalizarTodo"/>
+	    <include method="ListaTotalL"/>	    
+	    <include method="modificarLista"/>	    
+	    <include method="Eliminar"/>
+	    <include method="cont"/>
+	    <include method="combitoboy"/>		    	    
+	</create>    	
+
+
+        
+	<create creator="new" javascript="ListaControlDAO" >
+	  <param name="class" value="dwrDao.ListaControlDAO"/>    
+	    <include method="mostrarLista"/>
+	    <include method="mostrarLista3"/>	    
+	    <include method="mostrarLista4"/>	    
+	    <include method="mostrarNombre"/>	    	    
+	    <include method="adicionarR"/>	    	    	    
+	    <include method="ListaT"/>	    	    	    
+	    <include method="FinalizarTodo"/>	    
+	    
+	</create>    	
+
+
+        <create creator="new" javascript="ListaAdmPruebaDAO" >
+	  <param name="class" value="dwrDao.ListaAdmPruebaDAO"/>    
+	    <include method="mostrarLista1"/>	
+            <include method="mostrarLista"/>	
+	    <include method="mostrarListaV"/>	
+	    <include method="modificarPrueba"/>		    
+	    <include method="modificarPrueba1"/>		    
+	    <include method="modificarValores"/>		    
+	    <include method="modificarValores1"/>		    
+	</create>    	
+
+
+
+        <create creator="new" javascript="ListaAdmHemoDAO" >
+	  <param name="class" value="dwrDao.ListaAdmHemoDAO"/>    
+            <include method="mostrarLista"/>	
+            <include method="mostrarLista1"/>	
+	    <include method="eliminarH"/>	
+	    <include method="modificarHemo"/>	
+	</create>    	
+
+
+
+        <create creator="new" javascript="NuevoPruebaDAO" >
+	  <param name="class" value="dwrDao.NuevoPruebaDAO"/>    
+	    <include method="adicionarPrueba"/>	
+	    <include method="Listar"/>
+	    <include method="listarPrueba"/>
+            <include method="listarPrueba1"/>
+	    <include method="countRegistro"/>	
+	    <include method="AdicionarValores"/>		    
+	    <include method="Principio"/>		    
+	</create>    	
+
+
+
+        <create creator="new" javascript="NuevoHemoDAO" >
+	  <param name="class" value="dwrDao.NuevoHemoDAO"/>    
+	    <include method="countRegistro"/>	
+	    <include method="adicionarHemo"/>	
+	</create>    	
+
+
+	
+        <create creator="new" javascript="ListaAdmPersonalDAO" >
+	  <param name="class" value="dwrDao.ListaAdmPersonalDAO"/>    
+	    <include method="mostrarLista"/>	
+	    <include method="mostrarLista8"/>
+	    <include method="mostrarLista1"/>
+	    <include method="informacion"/>
+	    <include method="modificarPersonal"/>
+	    <include method="eliminarPersonal"/>
+	</create>    	
+	
+
+        <create creator="new" javascript="NuevoPersonalDAO" >
+	  <param name="class" value="dwrDao.NuevoPersonalDAO"/>    
+	    <include method="countRegistro"/>	
+	    <include method="countRegistro1"/>	
+	    <include method="adicionarPersonal"/>
+	    <include method="adicionarPersonal1"/>	    
+	</create>    	
+
+
+        <create creator="new" javascript="FechaReporteDAO" >
+	  <param name="class" value="dwrDao.FechaReporteDAO"/>    
+	    <include method="cont"/>	    
+	    <include method="cont1"/>	    	    
+	    <include method="cont2"/>	    	    	    
+	    <include method="cont3"/>
+	    <include method="cont4"/>
+            <include method="cont6"/>
+	    <include method="cont7"/>
+	</create>    	
+	
+
+        <create creator="new" javascript="FechaReporteFracDAO" >
+	  <param name="class" value="dwrDao.FechaReporteFracDAO"/>    
+	    <include method="cont"/>	    
+	    <include method="cont1"/>	    	    
+	    <include method="cont3"/>
+	    <include method="cont4"/>
+            <include method="cont6"/>
+	    <include method="cont7"/>
+	    <include method="cont8"/>
+	    <include method="contotal"/>	    
+	    <include method="division"/>	    
+	</create>    	
+	
+
+        <create creator="new" javascript="FechaReporteDesDAO" >
+	  <param name="class" value="dwrDao.FechaReporteDesDAO"/>    
+	    <include method="cont"/>	    
+	</create>    	
+
+
+        <create creator="new" javascript="ListaSereDAO" >
+	  <param name="class" value="dwrDao.ListaSereDAO"/>    
+	    <include method="mostrarLista"/>	
+	    <include method="cambioAtendido"/>	
+	    <include method="mostrarLista3"/>
+	    <include method="mostrarLista4"/>	    
+	    <include method="adicionarR"/>	    
+	    <include method="ListaT"/>	    
+	    <include method="mostrarNombre"/>	    	    
+	    <include method="FinalizarTodo"/>	    	    	    
+	</create>    	
+
+
+        <create creator="new" javascript="ListaHemaDAO" >
+	  <param name="class" value="dwrDao.ListaHemaDAO"/>    
+	    <include method="mostrarLista"/>	
+	    <include method="mostrarLista3"/>	
+	    <include method="mostrarLista4"/>
+	    <include method="mostrarNombre"/>
+	    <include method="adicionarR"/>
+	    <include method="ListaT"/>
+	    <include method="FinalizarTodo"/>
+	</create>    	
+
+
+        <create creator="new" javascript="ListaKardexDAO" >
+	  <param name="class" value="dwrDao.ListaKardexDAO"/>    
+    	    <include method="cont"/>	    
+	    <include method="cont1"/>
+	    <include method="cont2"/>	    	    
+	    <include method="cont3"/>
+	    <include method="cont4"/>
+	    
+            <include method="cont6"/>
+	    <include method="cont7"/>
+	    <include method="cont8"/>
+	    <include method="cont9"/>
+	    <include method="cont10"/>
+            <include method="cont11"/>
+	    <include method="cont12"/>
+	    <include method="cont13"/>
+	    <include method="cont14"/>
+	    <include method="cont15"/>
+	    <include method="cont16"/>
+	    
+	    <include method="cont17"/>
+	    <include method="cont18"/>
+	    <include method="cont19"/>
+	    <include method="cont20"/>
+	    <include method="cont21"/>
+	    <include method="cont22"/>
+
+
+	    <include method="cont23"/>
+	    <include method="cont24"/>
+	    <include method="cont25"/>
+	    <include method="cont26"/>
+	    <include method="cont27"/>
+	    <include method="cont28"/>
+	    <include method="cont29"/>
+	    <include method="cont30"/>
+
+	</create>    	
+
+
+
+        <create creator="new" javascript="ListarSalidaDAO" >
+	  <param name="class" value="dwrDao.ListarSalidaDAO"/>    
+	    <include method="mostrarCombo"/>
+	    <include method="cont3"/>
+	    <include method="insertar"/>
+	    <include method="listarChec"/>
+	    <include method="mostrarLista3"/>
+	    <include method="mostrarLista4"/>
+	    <include method="adicionarR"/>
+	    <include method="ListaT"/>
+	    <include method="FinalizarTodo"/>
+	    <include method="controlar"/>
+	    <include method="insertar2"/>
+
+	</create>    	
+
+
+
+	<convert converter="bean" match="dwrAtributos.NivelesRevicionLab"/>
+  </allow>
+</dwr>

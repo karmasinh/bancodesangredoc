@@ -1,0 +1,95 @@
+/*  
+Theme Name: Desert Theme
+Theme URI: http://dimension2k.de/
+Description: The Dimension2K wordpress 1.5 Theme, design & coding by evil.bert
+Version: 1.5
+Author: evil.bert
+Author URI: http://dimension2k.de/
+*/
+body {
+    /*BACKGROUND-IMAGE: url(../imagenes/ice-light.jpg);   */
+    background-color:#F0F8FF;    
+}
+
+.tabla{
+	width:100%;
+	border-style:ridge;
+	border-collapse:collapse;		
+	border-color:#00008B;
+	font: 0.7em Verdana, helvetica, sans-serif;
+}
+.trCaption{
+        width:100%;
+	border-style:ridge;
+	border-collapse:collapse;		
+	border-color:#00008B;
+}
+.mostrarUsuario{
+	width:100%;
+	border-style:ridge;
+	border-collapse:collapse;		
+	border-color:#00008B;
+	font: 0.7em Verdana, helvetica, sans-serif;
+}
+.trFilas{
+        border: 1px solid #00008B;
+	border-collapse:collapse;		
+}
+#menu{
+    float:left;
+    width: 100%;
+    height: 100%;	
+    }
+		    
+#menu a{ 
+   padding:1px 1px;  
+   display: block;
+   width:100%;
+   height:100%;
+   text-decoration: none;
+   border-bottom: 0px solid gray
+   color: #606;			    
+    }
+	    
+#menu a:hover{
+    background-color: #ffffee;
+    width:100%;
+    height:100%
+    color: #000000;
+    }
+.men{
+    float:left;
+    width: 100%;
+    height: 100%;	
+    }
+		    
+.men a{ 
+   padding:1px 1px;  
+   display: block;
+   width:100%;
+   height:100%;
+   text-decoration: none;
+   border-bottom: 0px solid gray
+   color: #606;			    
+    }
+	    
+.men a:hover{
+    background-color: #ffffee;
+    width:100%;
+    height:100%
+    color: #000000;
+    }
+
+.combo{
+    margin-top: 0;
+    width:25%;
+    color: #000000;
+    
+}
+.comboo{
+    background:#F5F5F5;
+    margin-top: 0;
+    width:100%;
+    color: #000000;
+    font: 0.6em Verdana, helvetica, sans-serif;
+}
