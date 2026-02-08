@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!-- 
+        Application Context Definition 
+        Since the original file is missing, we provide an empty container.
+        Beans should be defined here if they are not defined in dataAccessContext or specific servlet contexts.
+    -->
+</beans>

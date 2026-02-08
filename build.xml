@@ -3,7 +3,6 @@
 <project name="mili1" basedir="." default="usage">
 
   <property name="name" value="mili1"/>
-
   <property name="war.dir" value="war"/>
   <property name="src.dir" value="src"/>
   <property name="client.dir" value="client"/>
@@ -11,48 +10,19 @@
   <property name="weblib.dir" value="${war.dir}/WEB-INF/lib"/>
   <property name="dist.dir" value="dist"/>
 
-
   <!-- *************    CAMBIAR    ************* -->
-  <property name="spring.root" value="/opt/spring"/>
-  <property name="tomcat.home" value="/opt/tomcat"/>
+  <!-- <property name="spring.root" value="/opt/spring"/> -->
+  <!-- <property name="tomcat.home" value="/opt/tomcat"/> --> 
+  <property name="tomcat.home" value="."/> 
   <!-- ***************************************** -->
 
   <path id="master-classpath">
-
-    <fileset dir="${spring.root}/lib/axis">
-      <include name="axis.jar"/>
-    </fileset>
-    <fileset dir="${spring.root}/lib/ibatis">
-      <include name="ibatis-common-2.jar"/>
-      <include name="ibatis-sqlmap-2.jar"/>
-    </fileset>
-    <fileset dir="${spring.root}/lib/j2ee">
-      <include name="jaxrpc.jar"/>
-      <include name="jdbc2_0-stdext.jar"/>
-      <include name="servlet-api.jar"/>
-    </fileset>
-    <fileset dir="${spring.root}/lib/jakarta-commons">
-      <include name="commons-logging.jar"/>
-    </fileset>
-    <fileset dir="${spring.root}/lib/struts">
-      <include name="struts.jar"/>
-    </fileset>
-    <fileset dir="${spring.root}/dist">
-      <include name="spring.jar"/>
-    </fileset>
- <fileset dir="${spring.root}/lib/dwr">
-        <include name="dwr.jar"/>
-        <include name="bsf-2.3.jar"/>
-        <include name="bsh-2.0b4.jar"/>	
-      </fileset>
-      <fileset dir="${spring.root}/lib/hsqldb">
-      <include name="hsqldb.jar"/>
+    <fileset dir="${weblib.dir}">
+      <include name="*.jar"/>
     </fileset>
   </path>
 
-
   <target name="usage">
-
     <echo message=""/>
     <echo message="Spring JPetStore build file"/>
     <echo message="------------------------------------------------------"/>
@@ -64,9 +34,7 @@
     <echo message="warfile  --> Build the web application archive"/>
     <echo message="all      --> Clean, build, warfile"/>
     <echo message=""/>
-
   </target>
-
 
   <target name="clean" description="Clean output dirs (build, weblib, dist)">
 
@@ -93,6 +61,12 @@
     </javac>
 
     <copy todir="${build.dir}" preservelastmodified="true">
+    <fileset dir="${weblib.dir}">
+      <include name="*.jar"/>
+    </fileset>
+    </copy>
+
+    <copy todir="${build.dir}" preservelastmodified="true">
       <fileset dir="${src.dir}">
         <include name="**/*.xml"/>
         <include name="**/*.vm"/>
@@ -104,68 +78,11 @@
 
     <jar jarfile="${weblib.dir}/${name}.jar" compress="true" basedir="${build.dir}"/>
 
+    <!-- 
     <copy todir="${weblib.dir}" preservelastmodified="true">
-      <fileset dir="${spring.root}/lib/axis">
-        <include name="axis.jar"/>
-        <include name="saaj.jar"/>
-        <include name="wsdl4j.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/caucho">
-        <include name="burlap*.jar"/>
-        <include name="hessian*.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/postgres">
-        <include name="postgres.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/ibatis">
-        <include name="ibatis-common-2.jar"/>
-        <include name="ibatis-sqlmap-2.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/j2ee">
-        <include name="jaxrpc.jar"/>
-        <include name="jstl.jar"/>
-        <include name="servlet-api.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/jakarta-commons">
-        <include name="commons-beanutils.jar"/>
-        <include name="commons-collections.jar"/>
-        <include name="commons-dbcp.jar"/>
-        <include name="commons-digester.jar"/>
-        <include name="commons-discovery.jar"/>
-        <include name="commons-logging.jar"/>
-        <include name="commons-pool.jar"/>
-        <include name="commons-validator.jar"/>
-        <include name="commons-lang.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/jakarta-taglibs">
-        <include name="standard.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/struts">
-        <include name="struts.jar"/>
-	<include name="struts-menu-2.4.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/velocity">
-        <include name="velocity-1.4.jar"/>
-        <include name="velocity-tools-view-1.2.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/log4j">
-        <include name="log4j-1.2.13.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/lib/dwr">
-        <include name="dwr.jar"/>
-        <include name="bsf-2.3.jar"/>
-        <include name="bsh-2.0b4.jar"/>	
-      </fileset>
-      <fileset dir="${spring.root}/lib/oro">
-        <include name="jakarta-oro-2.0.8.jar"/>
-      </fileset>
-      <fileset dir="${spring.root}/dist">
-        <include name="spring.jar"/>
-      </fileset>
-    <fileset dir="${spring.root}/lib/hsqldb">
-      <include name="hsqldb.jar"/>
-    </fileset>
+       All libs are already in weblib.dir, no need to copy from external spring.root
     </copy>
+    -->
 
     <copy file="${weblib.dir}/${name}.jar" tofile="${client.dir}/${name}.jar"/>
 
@@ -246,6 +163,7 @@
         <include name="${name}.war"/>
       </fileset>
     </copy>
+    <echo message="Deployed WAR to ${tomcat.home}/webapps/"/>
   </target>
 
 

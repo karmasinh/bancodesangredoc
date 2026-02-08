@@ -1,0 +1,50 @@
+feb 07, 2026 11:24:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: org.apache.webapp.balancer.BalancerFilter: init(): ruleChain: [org.apache.webapp.balancer.RuleChain: [org.apache.webapp.balancer.rules.URLStringMatchRule: Target string: News / Redirect URL: http://www.cnn.com], [org.apache.webapp.balancer.rules.RequestParameterRule: Target param name: paramName / Target param value: paramValue / Redirect URL: http://www.yahoo.com], [org.apache.webapp.balancer.rules.AcceptEverythingRule: Redirect URL: http://jakarta.apache.org]]
+feb 07, 2026 11:24:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:24:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+feb 07, 2026 11:24:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:24:19 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+feb 07, 2026 11:44:50 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: org.apache.webapp.balancer.BalancerFilter: init(): ruleChain: [org.apache.webapp.balancer.RuleChain: [org.apache.webapp.balancer.rules.URLStringMatchRule: Target string: News / Redirect URL: http://www.cnn.com], [org.apache.webapp.balancer.rules.RequestParameterRule: Target param name: paramName / Target param value: paramValue / Redirect URL: http://www.yahoo.com], [org.apache.webapp.balancer.rules.AcceptEverythingRule: Redirect URL: http://jakarta.apache.org]]
+feb 07, 2026 11:44:50 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:44:50 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+feb 07, 2026 11:44:50 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:44:50 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@4e096385')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@649bec2e')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@693fe6c9')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextDestroyed()
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextDestroyed()
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@1a4013')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@1b6e1eff')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeReplaced('org.apache.catalina.WELCOME_FILES', '[Ljava.lang.String;@306f16f3')
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextDestroyed()
+feb 07, 2026 11:52:49 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextDestroyed()
+feb 07, 2026 11:53:34 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: org.apache.webapp.balancer.BalancerFilter: init(): ruleChain: [org.apache.webapp.balancer.RuleChain: [org.apache.webapp.balancer.rules.URLStringMatchRule: Target string: News / Redirect URL: http://www.cnn.com], [org.apache.webapp.balancer.rules.RequestParameterRule: Target param name: paramName / Target param value: paramValue / Redirect URL: http://www.yahoo.com], [org.apache.webapp.balancer.rules.AcceptEverythingRule: Redirect URL: http://jakarta.apache.org]]
+feb 07, 2026 11:53:34 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:53:34 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+feb 07, 2026 11:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+feb 07, 2026 11:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()

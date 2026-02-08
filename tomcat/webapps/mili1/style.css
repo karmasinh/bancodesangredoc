@@ -1,0 +1,20 @@
+/*  
+Theme Name: Desert Theme
+Theme URI: http://dimension2k.de/
+Description: The Dimension2K wordpress 1.5 Theme, design & coding by evil.bert
+Version: 1.5
+Author: evil.bert
+Author URI: http://dimension2k.de/
+*/
+
+.tabla{
+	border-style:ridge;
+	width:100%;
+	border-color:#00008B;
+	font: 0.7em Verdana, helvetica, sans-serif;
+}
+.mostrarUsuario{
+	width:100%;
+	font: 0.7em Verdana, helvetica, sans-serif;
+	BACKGROUND-IMAGE: url(../imagenes/ice-light.jpg);
+}
